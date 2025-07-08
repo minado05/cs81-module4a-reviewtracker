@@ -1,0 +1,1 @@
+The most helpful aspect of this code's structure is that the functions are defined before they are used, so it's helpful to understand what each function does before calling them. The most confusing part is the mostReadBook function. It took me a while to understand how the if condition !bookCounts[entry.book] works. 
