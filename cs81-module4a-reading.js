@@ -14,7 +14,7 @@ This function's purpose is to add new data entry into reading log. Its inputs ar
 */
 function addReadBook(day, book, minutes) {
   const newEntry = { day, book, minutes }; //create a new object/entry with given day, book, and minutes values for corresponding properties
-  readingLog.push(newEntry);
+  readingLog.push(newEntry); //One improvement is that we can do readingLog.push({day, book. minutes}) and omit above line of code
 }
 
 // Returns total minutes spent reading all week
