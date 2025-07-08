@@ -9,12 +9,18 @@ const readingLog = [
 ];
 
 // Adds a new reading entry to the log
+/*
+This function's purpose is to add new data entry into reading log. Its inputs are the day, book title, and duration (minutes). This function pushes the new entry into the reading log. 
+*/
 function addReadBook(day, book, minutes) {
   const newEntry = { day, book, minutes }; //create a new object/entry with given day, book, and minutes values for corresponding properties
   readingLog.push(newEntry);
 }
 
 // Returns total minutes spent reading all week
+/*
+This function's purspose is to count the total reading minutes for the week. Its input is the reading log. It returns the total minutes read.
+*/
 function totalReadingMinutes(log) {
   let total = 0;
   // This loop sums the values of the 'minutes' property for all the entries in log
@@ -25,6 +31,9 @@ function totalReadingMinutes(log) {
 }
 
 // Returns the book read most frequently
+/*
+This function's purspose is to find the book read the most. Its input is the reading log. It returns the book title that is most read.
+*/
 function mostReadBook(log) {
   const bookCounts = {}; //create an empty object
   // This loop goes through each entry and counts  # of times each book appears
@@ -52,6 +61,9 @@ function mostReadBook(log) {
 }
 
 // Prints a summary of minutes read per day
+/*
+This function's purspose is print a sentence summary of each reading log entry for each day. Its input is the reading log. It prints messages to the console.
+*/
 function printDailySummary(log) {
   for (let entry of log) {
     console.log(`${entry.day}: ${entry.minutes} mins reading "${entry.book}"`);
